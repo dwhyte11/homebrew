@@ -1,0 +1,168 @@
+{
+    "$schema": "../schema.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "ArchUnderDarkSkies",
+                "abbreviation": "AUDS",
+                "full": "Arch Under Dark Skies",
+                "authors": [
+                    "Daniel Whyte"
+                ],
+                "convertedBy": [
+                    "Daniel Whyte"
+                ],
+                "version": "1.0.0",
+                "url": "",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1614283062,
+        "dateLastModified": 1615220917
+    },
+    "monster": [
+        {
+            "name": "Sir Bloutzlout",
+            "source": "ArchUnderDarkSkies",
+            "page": 2,
+            "size": "L",
+            "type": "giant",
+            "alignment": [
+                "L",
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 18,
+                    "from": [
+                        "{@item plate armor|PHB|plate}"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 102,
+                "formula": "12d10 + 36"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 21,
+            "dex": 10,
+            "con": 17,
+            "int": 6,
+            "wis": 10,
+            "cha": 16,
+            "save": {
+                "wis": "+2",
+                "cha": "+5"
+            },
+            "skill": {
+                "arcana": "+2",
+                "perception": "+4"
+            },
+            "senses": [
+                "darkvision 60ft."
+            ],
+            "passive": 18,
+            "languages": [
+                "Giant",
+                "Orc"
+            ],
+            "cr": "5",
+            "spellcasting": [
+                {
+                    "name": "Innate Spellcasting",
+                    "headerEntries": [
+                        "Sir Bloutzlout's spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The Sir Bloutzlout can innately cast the following spells, requiring no material components:"
+                    ],
+                    "daily": {
+                        "3": [
+                            "{@spell eldritch blast}",
+                            "{@spell counterspell}"
+                        ],
+                        "1":[
+                            "{@spell burning hands}",
+                            "{@spell burning hands}"
+                        ]
+                    },
+                    "ability": "cha",
+                    "type": "spellcasting"
+                }
+            ],
+            "trait": [
+                {
+                    "name": "Two Heads",
+                    "entries": [
+                        "Sir Bloutzlout has advantage on Wisdom (Perception) check and on saving thows against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and being knocked {@condition unconscious}."
+                    ]
+                },
+                {
+                    "name": "Wakeful",
+                    "entries": [
+                        "When one of Sir Bloutzlout's heads is sleeping, the other is awake."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Sir Bloutzlout casts a spell and makes an attack or makes two attacks."
+                    ]
+                },
+                {
+                    "name": "Battleaxe",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 14 ({@dice 2d8 + 5}) slashing damage or 16 (2d10 + 5) slashing damage if used with two hands."
+                    ]
+                },
+                {
+                    "name": "Handaxe",
+                    "entries": [
+                        "{@atk mw, rw} {@hit 7} to hit, reach 5ft. or range 20/60ft., one target. {@h} 12 ({@dice 2d6 + 5}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Kick",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 7 ({@dice 2 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Eat Dis!",
+                    "entries": [
+                        "Sir Bloutzlout (the Zlout head) casts {@spell eldritch blast}."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "GI",
+                "O"
+            ],
+            "spellcastingTags": [
+                "I"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            "{@i Based on the Bloutzlout created by Stephen Brady}"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
