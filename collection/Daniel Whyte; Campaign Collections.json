@@ -53,12 +53,12 @@
             "wis": 10,
             "cha": 16,
             "save": {
-                "wis": "+2",
-                "cha": "+5"
+                "wis": "+3",
+                "cha": "+6"
             },
             "skill": {
-                "arcana": "+2",
-                "perception": "+4"
+                "arcana": "+4",
+                "perception": "+6"
             },
             "senses": [
                 "darkvision 60ft."
@@ -73,16 +73,20 @@
                 {
                     "name": "Innate Spellcasting",
                     "headerEntries": [
-                        "Sir Bloutzlout's spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The Sir Bloutzlout can innately cast the following spells, requiring no material components:"
+                        "Sir Bloutzlout's spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The Sir Bloutzlout can innately cast the following spells, requiring no material components:"
                     ],
                     "daily": {
+                        "will": [
+                            "{@spell eldritch blast}"
+                        ],
                         "3": [
-                            "{@spell eldritch blast}",
                             "{@spell counterspell}"
                         ],
-                        "1":[
+                        "1": [
+                            "{@spell bane}",
                             "{@spell burning hands}",
-                            "{@spell burning hands}"
+                            "{@spell ray of sickness}",
+                            "{@spell tasha's mind whip|tce}"
                         ]
                     },
                     "ability": "cha",
@@ -113,7 +117,7 @@
                 {
                     "name": "Battleaxe",
                     "entries": [
-                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 14 ({@dice 2d8 + 5}) slashing damage or 16 (2d10 + 5) slashing damage if used with two hands."
+                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 14 ({@dice 2d8 + 5}) slashing damage or 16 ({@dice 2d10 + 5}) slashing damage if used with two hands."
                     ]
                 },
                 {
