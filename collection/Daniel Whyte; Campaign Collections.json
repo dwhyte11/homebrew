@@ -24,7 +24,7 @@
         {
             "name": "Sir Bloutzlout",
             "source": "ArchUnderDarkSkies",
-            "page": 2,
+            "page": 0,
             "size": "L",
             "type": "giant",
             "alignment": [
@@ -63,7 +63,7 @@
             "senses": [
                 "darkvision 60ft."
             ],
-            "passive": 18,
+            "passive": 16,
             "languages": [
                 "Giant",
                 "Orc"
@@ -75,10 +75,10 @@
                     "headerEntries": [
                         "Sir Bloutzlout's spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The Sir Bloutzlout can innately cast the following spells, requiring no material components:"
                     ],
+                    "will": [
+                        "{@spell eldritch blast}"
+                    ],
                     "daily": {
-                        "will": [
-                            "{@spell eldritch blast}"
-                        ],
                         "3": [
                             "{@spell counterspell}"
                         ],
@@ -115,21 +115,15 @@
                     ]
                 },
                 {
-                    "name": "Battleaxe",
+                    "name": "Quarterstaff",
                     "entries": [
-                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 14 ({@dice 2d8 + 5}) slashing damage or 16 ({@dice 2d10 + 5}) slashing damage if used with two hands."
-                    ]
-                },
-                {
-                    "name": "Handaxe",
-                    "entries": [
-                        "{@atk mw, rw} {@hit 7} to hit, reach 5ft. or range 20/60ft., one target. {@h} 12 ({@dice 2d6 + 5}) slashing damage."
+                        "{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h} 12 ({@dice 2d6 + 5}) slashing damage or 14 ({@dice 2d8 + 5}) slashing damage if used with two hands."
                     ]
                 },
                 {
                     "name": "Kick",
                     "entries": [
-                        "{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h} 7 ({@dice 2 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+                        "{@atk mw} {@hit 8} to hit, reach 10ft., one target. {@h} 7 ({@dice 2 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
                     ]
                 }
             ],
@@ -167,6 +161,101 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Obsidian Brawler",
+            "source": "ArchUnderDarkSkies",
+            "page": 0,
+            "size": "H",
+            "type": "giant",
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 105,
+                "formula": "10d12 + 40"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 21,
+            "dex": 14,
+            "con": 19,
+            "int": 11,
+            "wis": 10,
+            "cha": 9,
+            "skill": {
+                "perception": "+3"
+            },
+            "passive": 13,
+            "languages": [
+                "Giant"
+            ],
+            "cr": "5",
+            "trait": [
+                {
+                    "name": "Forceful Blows",
+                    "entries": [
+                        "If the brawler hits a creature with two melee attacks on their turn they can choose to either push that creature up to 10 feet or grapple them (escape DC 16)."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The giant makes four attacks."
+                    ]
+                },
+                {
+                    "name": "Strike",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h} 12 ({@dice 2d6 + 5}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Handaxe",
+                    "entries": [
+                        "{@atk mw, rw} {@hit 8} to hit, reach 5ft. or range 20/60ft., one target. {@h} 12 ({@dice 2d6 + 5}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Kick",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 10ft., one target. {@h} 7 ({@dice 2 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
+                    ]
+                }
+            ],
+            "environment": [
+                "hill"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "GI"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH",
+                "RW"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "prone"
+            ]
         }
     ]
 }
